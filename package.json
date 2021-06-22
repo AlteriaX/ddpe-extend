@@ -2,7 +2,7 @@
   "name": "discord-data-package-explorer",
   "version": "2.0.0",
   "scripts": {
-    "start": "sirv public --single"
+    "start": "node index.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",

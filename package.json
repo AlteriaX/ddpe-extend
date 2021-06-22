@@ -30,7 +30,7 @@
     "svelte-routing": "^1.6.0",
     "svelte-simple-modal": "^0.8.1",
     "svelte-tooltip": "^1.2.0"
-  }
+  },
   "engines": {
     "node": "^14.17.1"
   }

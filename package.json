@@ -2,8 +2,6 @@
   "name": "discord-data-package-explorer",
   "version": "2.0.0",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
     "start": "sirv public --single"
   },
   "devDependencies": {
@@ -32,5 +30,8 @@
     "svelte-routing": "^1.6.0",
     "svelte-simple-modal": "^0.8.1",
     "svelte-tooltip": "^1.2.0"
+  }
+  "engines": {
+    "node": "^14.17.1"
   }
 }

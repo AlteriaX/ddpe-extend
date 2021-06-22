@@ -11682,7 +11682,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 96, 165, 5099);
+    			add_location(span, file$c, 96, 165, 5100);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11718,7 +11718,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 97, 165, 5346);
+    			add_location(span, file$c, 97, 165, 5347);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11754,7 +11754,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 98, 165, 5593);
+    			add_location(span, file$c, 98, 165, 5594);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11790,7 +11790,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 99, 165, 5840);
+    			add_location(span, file$c, 99, 165, 5841);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11826,7 +11826,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 100, 165, 6087);
+    			add_location(span, file$c, 100, 165, 6088);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11862,7 +11862,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 101, 165, 6334);
+    			add_location(span, file$c, 101, 165, 6335);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11898,7 +11898,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 102, 165, 6581);
+    			add_location(span, file$c, 102, 165, 6582);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11934,7 +11934,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 103, 165, 6828);
+    			add_location(span, file$c, 103, 165, 6829);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11970,7 +11970,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 104, 165, 7075);
+    			add_location(span, file$c, 104, 165, 7076);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -12174,7 +12174,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h3 = element("h3");
-    			t0 = text("Your top 5 favorite words are\n                            ");
+    			t0 = text("Your top 10 favorite words are\n                            ");
     			span0 = element("span");
     			create_component(sveltetooltip0.$$.fragment);
     			t1 = text(", \n                            ");
@@ -12205,25 +12205,25 @@ var app = (function () {
     			span9 = element("span");
     			create_component(sveltetooltip9.$$.fragment);
     			attr_dev(span0, "class", "text-discord");
-    			add_location(span0, file$c, 96, 28, 4962);
+    			add_location(span0, file$c, 96, 28, 4963);
     			attr_dev(span1, "class", "text-discord");
-    			add_location(span1, file$c, 97, 28, 5209);
+    			add_location(span1, file$c, 97, 28, 5210);
     			attr_dev(span2, "class", "text-discord");
-    			add_location(span2, file$c, 98, 28, 5456);
+    			add_location(span2, file$c, 98, 28, 5457);
     			attr_dev(span3, "class", "text-discord");
-    			add_location(span3, file$c, 99, 28, 5703);
+    			add_location(span3, file$c, 99, 28, 5704);
     			attr_dev(span4, "class", "text-discord");
-    			add_location(span4, file$c, 100, 28, 5950);
+    			add_location(span4, file$c, 100, 28, 5951);
     			attr_dev(span5, "class", "text-discord");
-    			add_location(span5, file$c, 101, 28, 6197);
+    			add_location(span5, file$c, 101, 28, 6198);
     			attr_dev(span6, "class", "text-discord");
-    			add_location(span6, file$c, 102, 28, 6444);
+    			add_location(span6, file$c, 102, 28, 6445);
     			attr_dev(span7, "class", "text-discord");
-    			add_location(span7, file$c, 103, 28, 6691);
+    			add_location(span7, file$c, 103, 28, 6692);
     			attr_dev(span8, "class", "text-discord");
-    			add_location(span8, file$c, 104, 28, 6938);
+    			add_location(span8, file$c, 104, 28, 6939);
     			attr_dev(span9, "class", "text-discord");
-    			add_location(span9, file$c, 105, 28, 7187);
+    			add_location(span9, file$c, 105, 28, 7188);
     			attr_dev(h3, "slot", "content");
     			attr_dev(h3, "class", "svelte-lrlcg0");
     			add_location(h3, file$c, 95, 24, 4885);
@@ -12563,8 +12563,8 @@ var app = (function () {
     			t3 = text(" is definitely your favorite hour to chat with your friends!");
     			t4 = space();
     			create_component(chart.$$.fragment);
-    			add_location(h1, file$c, 116, 20, 8017);
-    			add_location(p, file$c, 117, 20, 8065);
+    			add_location(h1, file$c, 116, 20, 8018);
+    			add_location(p, file$c, 117, 20, 8066);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -13276,9 +13276,9 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "contributors-item svelte-lrlcg0");
     			set_style(div, "background-image", "url('https://avatars.githubusercontent.com/u/42497995?s=460&u=86b6310688c5e05140c6d12902d878cacdcf93db&v=4')");
-    			add_location(div, file$c, 214, 36, 14946);
+    			add_location(div, file$c, 214, 36, 14947);
     			attr_dev(a, "href", "https://github.com/Androz2091");
-    			add_location(a, file$c, 213, 32, 14869);
+    			add_location(a, file$c, 213, 32, 14870);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -13410,10 +13410,10 @@ var app = (function () {
     			t = space();
     			attr_dev(div, "class", "contributors-item svelte-lrlcg0");
     			set_style(div, "background-image", "url('" + /*user*/ ctx[5].avatar + "')");
-    			add_location(div, file$c, 207, 40, 14502);
+    			add_location(div, file$c, 207, 40, 14503);
     			attr_dev(a, "href", a_href_value = /*user*/ ctx[5].url);
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$c, 206, 36, 14424);
+    			add_location(a, file$c, 206, 36, 14425);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -13504,7 +13504,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Loading...";
-    			add_location(p, file$c, 202, 28, 14189);
+    			add_location(p, file$c, 202, 28, 14190);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13574,18 +13574,18 @@ var app = (function () {
     			t6 = space();
     			div1 = element("div");
     			info.block.c();
-    			add_location(h2, file$c, 195, 24, 13620);
+    			add_location(h2, file$c, 195, 24, 13621);
     			attr_dev(a, "href", "https://github.com/Androz2091/discord-data-package-explorer");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "text-discord");
     			set_style(a, "text-decoration", "none");
-    			add_location(a, file$c, 196, 80, 13728);
-    			add_location(p0, file$c, 196, 24, 13672);
-    			add_location(p1, file$c, 197, 24, 13932);
+    			add_location(a, file$c, 196, 80, 13729);
+    			add_location(p0, file$c, 196, 24, 13673);
+    			add_location(p1, file$c, 197, 24, 13933);
     			set_style(div0, "text-align", "center");
-    			add_location(div0, file$c, 194, 20, 13562);
+    			add_location(div0, file$c, 194, 20, 13563);
     			attr_dev(div1, "class", "contributors svelte-lrlcg0");
-    			add_location(div1, file$c, 200, 20, 14077);
+    			add_location(div1, file$c, 200, 20, 14078);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);

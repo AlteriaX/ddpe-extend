@@ -4166,7 +4166,7 @@ var app = (function () {
         
         for (let p in object) array[array.length] = p;
         
-        return array.sort((a, b) => object[b] - object[a]).map((word) => ({ word: word, count: object[word] })).slice(0, 5);
+        return array.sort((a, b) => object[b] - object[a]).map((word) => ({ word: word, count: object[word] })).slice(0, 10);
     };
 
     const getGitHubContributors = () => {
@@ -11182,25 +11182,25 @@ var app = (function () {
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[6] = list[i];
+    	child_ctx[5] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
-    	child_ctx[11] = i;
+    	child_ctx[8] = list[i];
+    	child_ctx[10] = i;
     	return child_ctx;
     }
 
     function get_each_context_2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
-    	child_ctx[11] = i;
+    	child_ctx[8] = list[i];
+    	child_ctx[10] = i;
     	return child_ctx;
     }
 
-    // (53:8) {#if $data}
+    // (47:8) {#if $data}
     function create_if_block$5(ctx) {
     	let div;
     	let card0;
@@ -11223,7 +11223,7 @@ var app = (function () {
     	card0 = new Card({
     			props: {
     				name: "profile",
-    				$$slots: { default: [create_default_slot_16] },
+    				$$slots: { default: [create_default_slot_21] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11232,7 +11232,7 @@ var app = (function () {
     	card1 = new Card({
     			props: {
     				name: "first",
-    				$$slots: { default: [create_default_slot_15] },
+    				$$slots: { default: [create_default_slot_20] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11311,7 +11311,7 @@ var app = (function () {
     			t6 = space();
     			create_component(card7.$$.fragment);
     			attr_dev(div, "class", "cards svelte-lrlcg0");
-    			add_location(div, file$c, 53, 12, 2013);
+    			add_location(div, file$c, 47, 12, 1709);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -11335,56 +11335,56 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const card0_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card0_changes.$$scope = { dirty, ctx };
     			}
 
     			card0.$set(card0_changes);
     			const card1_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card1_changes.$$scope = { dirty, ctx };
     			}
 
     			card1.$set(card1_changes);
     			const card2_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card2_changes.$$scope = { dirty, ctx };
     			}
 
     			card2.$set(card2_changes);
     			const card3_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card3_changes.$$scope = { dirty, ctx };
     			}
 
     			card3.$set(card3_changes);
     			const card4_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card4_changes.$$scope = { dirty, ctx };
     			}
 
     			card4.$set(card4_changes);
     			const card5_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card5_changes.$$scope = { dirty, ctx };
     			}
 
     			card5.$set(card5_changes);
     			const card6_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				card6_changes.$$scope = { dirty, ctx };
     			}
 
     			card6.$set(card6_changes);
     			const card7_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 4096) {
     				card7_changes.$$scope = { dirty, ctx };
     			}
 
@@ -11430,15 +11430,15 @@ var app = (function () {
     		block,
     		id: create_if_block$5.name,
     		type: "if",
-    		source: "(53:8) {#if $data}",
+    		source: "(47:8) {#if $data}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (55:16) <Card name="profile">
-    function create_default_slot_16(ctx) {
+    // (49:16) <Card name="profile">
+    function create_default_slot_21(ctx) {
     	let profilecard;
     	let current;
 
@@ -11482,17 +11482,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16.name,
+    		id: create_default_slot_21.name,
     		type: "slot",
-    		source: "(55:16) <Card name=\\\"profile\\\">",
+    		source: "(49:16) <Card name=\\\"profile\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (62:16) <Card name="first">
-    function create_default_slot_15(ctx) {
+    // (56:16) <Card name="first">
+    function create_default_slot_20(ctx) {
     	let funfact0;
     	let t0;
     	let funfact1;
@@ -11583,16 +11583,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15.name,
+    		id: create_default_slot_20.name,
     		type: "slot",
-    		source: "(62:16) <Card name=\\\"first\\\">",
+    		source: "(56:16) <Card name=\\\"first\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (86:24) 
+    // (80:24) 
     function create_content_slot_1(ctx) {
     	let div;
     	let h3;
@@ -11615,11 +11615,11 @@ var app = (function () {
     			t2 = text(t2_value);
     			t3 = text("\n                            on Discord");
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 88, 28, 4269);
+    			add_location(span, file$c, 82, 28, 3965);
     			attr_dev(h3, "class", "svelte-lrlcg0");
-    			add_location(h3, file$c, 86, 24, 4198);
+    			add_location(h3, file$c, 80, 24, 3894);
     			attr_dev(div, "slot", "content");
-    			add_location(div, file$c, 85, 24, 4152);
+    			add_location(div, file$c, 79, 24, 3848);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -11664,15 +11664,15 @@ var app = (function () {
     		block,
     		id: create_content_slot_1.name,
     		type: "slot",
-    		source: "(86:24) ",
+    		source: "(80:24) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (103:55) <SvelteTooltip tip="Used {$data.favoriteWords[0].count.toLocaleString('en-US')} times" bottom color="#000000">
-    function create_default_slot_14(ctx) {
+    // (97:55) <SvelteTooltip tip="Used {$data.favoriteWords[0].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_19(ctx) {
     	let span;
     	let t_value = /*$data*/ ctx[0].favoriteWords[0].word + "";
     	let t;
@@ -11682,7 +11682,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 102, 165, 5403);
+    			add_location(span, file$c, 96, 165, 5099);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11698,17 +11698,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14.name,
+    		id: create_default_slot_19.name,
     		type: "slot",
-    		source: "(103:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[0].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		source: "(97:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[0].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:55) <SvelteTooltip tip="Used {$data.favoriteWords[1].count.toLocaleString('en-US')} times" bottom color="#000000">
-    function create_default_slot_13(ctx) {
+    // (98:55) <SvelteTooltip tip="Used {$data.favoriteWords[1].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_18(ctx) {
     	let span;
     	let t_value = /*$data*/ ctx[0].favoriteWords[1].word + "";
     	let t;
@@ -11718,7 +11718,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 103, 165, 5650);
+    			add_location(span, file$c, 97, 165, 5346);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11734,17 +11734,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13.name,
+    		id: create_default_slot_18.name,
     		type: "slot",
-    		source: "(104:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[1].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		source: "(98:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[1].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:55) <SvelteTooltip tip="Used {$data.favoriteWords[2].count.toLocaleString('en-US')} times" bottom color="#000000">
-    function create_default_slot_12(ctx) {
+    // (99:55) <SvelteTooltip tip="Used {$data.favoriteWords[2].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_17(ctx) {
     	let span;
     	let t_value = /*$data*/ ctx[0].favoriteWords[2].word + "";
     	let t;
@@ -11754,7 +11754,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 104, 165, 5897);
+    			add_location(span, file$c, 98, 165, 5593);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11770,17 +11770,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12.name,
+    		id: create_default_slot_17.name,
     		type: "slot",
-    		source: "(105:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[2].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		source: "(99:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[2].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:55) <SvelteTooltip tip="Used {$data.favoriteWords[3].count.toLocaleString('en-US')} times" bottom color="#000000">
-    function create_default_slot_11(ctx) {
+    // (100:55) <SvelteTooltip tip="Used {$data.favoriteWords[3].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_16(ctx) {
     	let span;
     	let t_value = /*$data*/ ctx[0].favoriteWords[3].word + "";
     	let t;
@@ -11790,7 +11790,7 @@ var app = (function () {
     			span = element("span");
     			t = text(t_value);
     			attr_dev(span, "class", "text-discord");
-    			add_location(span, file$c, 105, 165, 6144);
+    			add_location(span, file$c, 99, 165, 5840);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -11806,18 +11806,198 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11.name,
+    		id: create_default_slot_16.name,
     		type: "slot",
-    		source: "(106:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[3].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		source: "(100:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[3].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (107:55) <SvelteTooltip tip="Used {$data.favoriteWords[4].count.toLocaleString('en-US')} times" bottom color="#000000">
-    function create_default_slot_10(ctx) {
+    // (101:55) <SvelteTooltip tip="Used {$data.favoriteWords[4].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_15(ctx) {
+    	let span;
     	let t_value = /*$data*/ ctx[0].favoriteWords[4].word + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text(t_value);
+    			attr_dev(span, "class", "text-discord");
+    			add_location(span, file$c, 100, 165, 6087);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[4].word + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_15.name,
+    		type: "slot",
+    		source: "(101:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[4].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (102:55) <SvelteTooltip tip="Used {$data.favoriteWords[5].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_14(ctx) {
+    	let span;
+    	let t_value = /*$data*/ ctx[0].favoriteWords[5].word + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text(t_value);
+    			attr_dev(span, "class", "text-discord");
+    			add_location(span, file$c, 101, 165, 6334);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[5].word + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_14.name,
+    		type: "slot",
+    		source: "(102:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[5].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (103:55) <SvelteTooltip tip="Used {$data.favoriteWords[6].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_13(ctx) {
+    	let span;
+    	let t_value = /*$data*/ ctx[0].favoriteWords[6].word + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text(t_value);
+    			attr_dev(span, "class", "text-discord");
+    			add_location(span, file$c, 102, 165, 6581);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[6].word + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_13.name,
+    		type: "slot",
+    		source: "(103:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[6].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (104:55) <SvelteTooltip tip="Used {$data.favoriteWords[7].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_12(ctx) {
+    	let span;
+    	let t_value = /*$data*/ ctx[0].favoriteWords[7].word + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text(t_value);
+    			attr_dev(span, "class", "text-discord");
+    			add_location(span, file$c, 103, 165, 6828);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[7].word + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_12.name,
+    		type: "slot",
+    		source: "(104:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[7].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (105:55) <SvelteTooltip tip="Used {$data.favoriteWords[8].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_11(ctx) {
+    	let span;
+    	let t_value = /*$data*/ ctx[0].favoriteWords[8].word + "";
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			span = element("span");
+    			t = text(t_value);
+    			attr_dev(span, "class", "text-discord");
+    			add_location(span, file$c, 104, 165, 7075);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, span, anchor);
+    			append_dev(span, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[8].word + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(span);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_11.name,
+    		type: "slot",
+    		source: "(105:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[8].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (106:55) <SvelteTooltip tip="Used {$data.favoriteWords[9].count.toLocaleString('en-US')} times" bottom color="#000000">
+    function create_default_slot_10(ctx) {
+    	let t_value = /*$data*/ ctx[0].favoriteWords[9].word + "";
     	let t;
 
     	const block = {
@@ -11828,7 +12008,7 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[4].word + "")) set_data_dev(t, t_value);
+    			if (dirty & /*$data*/ 1 && t_value !== (t_value = /*$data*/ ctx[0].favoriteWords[9].word + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
@@ -11839,14 +12019,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(107:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[4].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
+    		source: "(106:55) <SvelteTooltip tip=\\\"Used {$data.favoriteWords[9].count.toLocaleString('en-US')} times\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:24) 
+    // (96:24) 
     function create_content_slot(ctx) {
     	let h3;
     	let t0;
@@ -11864,6 +12044,21 @@ var app = (function () {
     	let t4;
     	let span4;
     	let sveltetooltip4;
+    	let t5;
+    	let span5;
+    	let sveltetooltip5;
+    	let t6;
+    	let span6;
+    	let sveltetooltip6;
+    	let t7;
+    	let span7;
+    	let sveltetooltip7;
+    	let t8;
+    	let span8;
+    	let sveltetooltip8;
+    	let t9;
+    	let span9;
+    	let sveltetooltip9;
     	let current;
 
     	sveltetooltip0 = new SvelteTooltip({
@@ -11871,7 +12066,7 @@ var app = (function () {
     				tip: "Used " + /*$data*/ ctx[0].favoriteWords[0].count.toLocaleString("en-US") + " times",
     				bottom: true,
     				color: "#000000",
-    				$$slots: { default: [create_default_slot_14] },
+    				$$slots: { default: [create_default_slot_19] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11882,7 +12077,7 @@ var app = (function () {
     				tip: "Used " + /*$data*/ ctx[0].favoriteWords[1].count.toLocaleString("en-US") + " times",
     				bottom: true,
     				color: "#000000",
-    				$$slots: { default: [create_default_slot_13] },
+    				$$slots: { default: [create_default_slot_18] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11893,7 +12088,7 @@ var app = (function () {
     				tip: "Used " + /*$data*/ ctx[0].favoriteWords[2].count.toLocaleString("en-US") + " times",
     				bottom: true,
     				color: "#000000",
-    				$$slots: { default: [create_default_slot_12] },
+    				$$slots: { default: [create_default_slot_17] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11904,7 +12099,7 @@ var app = (function () {
     				tip: "Used " + /*$data*/ ctx[0].favoriteWords[3].count.toLocaleString("en-US") + " times",
     				bottom: true,
     				color: "#000000",
-    				$$slots: { default: [create_default_slot_11] },
+    				$$slots: { default: [create_default_slot_16] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -11913,6 +12108,61 @@ var app = (function () {
     	sveltetooltip4 = new SvelteTooltip({
     			props: {
     				tip: "Used " + /*$data*/ ctx[0].favoriteWords[4].count.toLocaleString("en-US") + " times",
+    				bottom: true,
+    				color: "#000000",
+    				$$slots: { default: [create_default_slot_15] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	sveltetooltip5 = new SvelteTooltip({
+    			props: {
+    				tip: "Used " + /*$data*/ ctx[0].favoriteWords[5].count.toLocaleString("en-US") + " times",
+    				bottom: true,
+    				color: "#000000",
+    				$$slots: { default: [create_default_slot_14] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	sveltetooltip6 = new SvelteTooltip({
+    			props: {
+    				tip: "Used " + /*$data*/ ctx[0].favoriteWords[6].count.toLocaleString("en-US") + " times",
+    				bottom: true,
+    				color: "#000000",
+    				$$slots: { default: [create_default_slot_13] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	sveltetooltip7 = new SvelteTooltip({
+    			props: {
+    				tip: "Used " + /*$data*/ ctx[0].favoriteWords[7].count.toLocaleString("en-US") + " times",
+    				bottom: true,
+    				color: "#000000",
+    				$$slots: { default: [create_default_slot_12] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	sveltetooltip8 = new SvelteTooltip({
+    			props: {
+    				tip: "Used " + /*$data*/ ctx[0].favoriteWords[8].count.toLocaleString("en-US") + " times",
+    				bottom: true,
+    				color: "#000000",
+    				$$slots: { default: [create_default_slot_11] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	sveltetooltip9 = new SvelteTooltip({
+    			props: {
+    				tip: "Used " + /*$data*/ ctx[0].favoriteWords[9].count.toLocaleString("en-US") + " times",
     				bottom: true,
     				color: "#000000",
     				$$slots: { default: [create_default_slot_10] },
@@ -11936,22 +12186,47 @@ var app = (function () {
     			t3 = text(", \n                            ");
     			span3 = element("span");
     			create_component(sveltetooltip3.$$.fragment);
-    			t4 = text(" and\n                            ");
+    			t4 = text(", \n                            ");
     			span4 = element("span");
     			create_component(sveltetooltip4.$$.fragment);
+    			t5 = text(", \n                            ");
+    			span5 = element("span");
+    			create_component(sveltetooltip5.$$.fragment);
+    			t6 = text(", \n                            ");
+    			span6 = element("span");
+    			create_component(sveltetooltip6.$$.fragment);
+    			t7 = text(", \n                            ");
+    			span7 = element("span");
+    			create_component(sveltetooltip7.$$.fragment);
+    			t8 = text(", \n                            ");
+    			span8 = element("span");
+    			create_component(sveltetooltip8.$$.fragment);
+    			t9 = text(" and\n                            ");
+    			span9 = element("span");
+    			create_component(sveltetooltip9.$$.fragment);
     			attr_dev(span0, "class", "text-discord");
-    			add_location(span0, file$c, 102, 28, 5266);
+    			add_location(span0, file$c, 96, 28, 4962);
     			attr_dev(span1, "class", "text-discord");
-    			add_location(span1, file$c, 103, 28, 5513);
+    			add_location(span1, file$c, 97, 28, 5209);
     			attr_dev(span2, "class", "text-discord");
-    			add_location(span2, file$c, 104, 28, 5760);
+    			add_location(span2, file$c, 98, 28, 5456);
     			attr_dev(span3, "class", "text-discord");
-    			add_location(span3, file$c, 105, 28, 6007);
+    			add_location(span3, file$c, 99, 28, 5703);
     			attr_dev(span4, "class", "text-discord");
-    			add_location(span4, file$c, 106, 28, 6256);
+    			add_location(span4, file$c, 100, 28, 5950);
+    			attr_dev(span5, "class", "text-discord");
+    			add_location(span5, file$c, 101, 28, 6197);
+    			attr_dev(span6, "class", "text-discord");
+    			add_location(span6, file$c, 102, 28, 6444);
+    			attr_dev(span7, "class", "text-discord");
+    			add_location(span7, file$c, 103, 28, 6691);
+    			attr_dev(span8, "class", "text-discord");
+    			add_location(span8, file$c, 104, 28, 6938);
+    			attr_dev(span9, "class", "text-discord");
+    			add_location(span9, file$c, 105, 28, 7187);
     			attr_dev(h3, "slot", "content");
     			attr_dev(h3, "class", "svelte-lrlcg0");
-    			add_location(h3, file$c, 101, 24, 5189);
+    			add_location(h3, file$c, 95, 24, 4885);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -11970,13 +12245,28 @@ var app = (function () {
     			append_dev(h3, t4);
     			append_dev(h3, span4);
     			mount_component(sveltetooltip4, span4, null);
+    			append_dev(h3, t5);
+    			append_dev(h3, span5);
+    			mount_component(sveltetooltip5, span5, null);
+    			append_dev(h3, t6);
+    			append_dev(h3, span6);
+    			mount_component(sveltetooltip6, span6, null);
+    			append_dev(h3, t7);
+    			append_dev(h3, span7);
+    			mount_component(sveltetooltip7, span7, null);
+    			append_dev(h3, t8);
+    			append_dev(h3, span8);
+    			mount_component(sveltetooltip8, span8, null);
+    			append_dev(h3, t9);
+    			append_dev(h3, span9);
+    			mount_component(sveltetooltip9, span9, null);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
     			const sveltetooltip0_changes = {};
     			if (dirty & /*$data*/ 1) sveltetooltip0_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[0].count.toLocaleString("en-US") + " times";
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				sveltetooltip0_changes.$$scope = { dirty, ctx };
     			}
 
@@ -11984,7 +12274,7 @@ var app = (function () {
     			const sveltetooltip1_changes = {};
     			if (dirty & /*$data*/ 1) sveltetooltip1_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[1].count.toLocaleString("en-US") + " times";
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				sveltetooltip1_changes.$$scope = { dirty, ctx };
     			}
 
@@ -11992,7 +12282,7 @@ var app = (function () {
     			const sveltetooltip2_changes = {};
     			if (dirty & /*$data*/ 1) sveltetooltip2_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[2].count.toLocaleString("en-US") + " times";
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				sveltetooltip2_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12000,7 +12290,7 @@ var app = (function () {
     			const sveltetooltip3_changes = {};
     			if (dirty & /*$data*/ 1) sveltetooltip3_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[3].count.toLocaleString("en-US") + " times";
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				sveltetooltip3_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12008,11 +12298,51 @@ var app = (function () {
     			const sveltetooltip4_changes = {};
     			if (dirty & /*$data*/ 1) sveltetooltip4_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[4].count.toLocaleString("en-US") + " times";
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				sveltetooltip4_changes.$$scope = { dirty, ctx };
     			}
 
     			sveltetooltip4.$set(sveltetooltip4_changes);
+    			const sveltetooltip5_changes = {};
+    			if (dirty & /*$data*/ 1) sveltetooltip5_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[5].count.toLocaleString("en-US") + " times";
+
+    			if (dirty & /*$$scope, $data*/ 4097) {
+    				sveltetooltip5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			sveltetooltip5.$set(sveltetooltip5_changes);
+    			const sveltetooltip6_changes = {};
+    			if (dirty & /*$data*/ 1) sveltetooltip6_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[6].count.toLocaleString("en-US") + " times";
+
+    			if (dirty & /*$$scope, $data*/ 4097) {
+    				sveltetooltip6_changes.$$scope = { dirty, ctx };
+    			}
+
+    			sveltetooltip6.$set(sveltetooltip6_changes);
+    			const sveltetooltip7_changes = {};
+    			if (dirty & /*$data*/ 1) sveltetooltip7_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[7].count.toLocaleString("en-US") + " times";
+
+    			if (dirty & /*$$scope, $data*/ 4097) {
+    				sveltetooltip7_changes.$$scope = { dirty, ctx };
+    			}
+
+    			sveltetooltip7.$set(sveltetooltip7_changes);
+    			const sveltetooltip8_changes = {};
+    			if (dirty & /*$data*/ 1) sveltetooltip8_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[8].count.toLocaleString("en-US") + " times";
+
+    			if (dirty & /*$$scope, $data*/ 4097) {
+    				sveltetooltip8_changes.$$scope = { dirty, ctx };
+    			}
+
+    			sveltetooltip8.$set(sveltetooltip8_changes);
+    			const sveltetooltip9_changes = {};
+    			if (dirty & /*$data*/ 1) sveltetooltip9_changes.tip = "Used " + /*$data*/ ctx[0].favoriteWords[9].count.toLocaleString("en-US") + " times";
+
+    			if (dirty & /*$$scope, $data*/ 4097) {
+    				sveltetooltip9_changes.$$scope = { dirty, ctx };
+    			}
+
+    			sveltetooltip9.$set(sveltetooltip9_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -12021,6 +12351,11 @@ var app = (function () {
     			transition_in(sveltetooltip2.$$.fragment, local);
     			transition_in(sveltetooltip3.$$.fragment, local);
     			transition_in(sveltetooltip4.$$.fragment, local);
+    			transition_in(sveltetooltip5.$$.fragment, local);
+    			transition_in(sveltetooltip6.$$.fragment, local);
+    			transition_in(sveltetooltip7.$$.fragment, local);
+    			transition_in(sveltetooltip8.$$.fragment, local);
+    			transition_in(sveltetooltip9.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -12029,6 +12364,11 @@ var app = (function () {
     			transition_out(sveltetooltip2.$$.fragment, local);
     			transition_out(sveltetooltip3.$$.fragment, local);
     			transition_out(sveltetooltip4.$$.fragment, local);
+    			transition_out(sveltetooltip5.$$.fragment, local);
+    			transition_out(sveltetooltip6.$$.fragment, local);
+    			transition_out(sveltetooltip7.$$.fragment, local);
+    			transition_out(sveltetooltip8.$$.fragment, local);
+    			transition_out(sveltetooltip9.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -12038,6 +12378,11 @@ var app = (function () {
     			destroy_component(sveltetooltip2);
     			destroy_component(sveltetooltip3);
     			destroy_component(sveltetooltip4);
+    			destroy_component(sveltetooltip5);
+    			destroy_component(sveltetooltip6);
+    			destroy_component(sveltetooltip7);
+    			destroy_component(sveltetooltip8);
+    			destroy_component(sveltetooltip9);
     		}
     	};
 
@@ -12045,14 +12390,14 @@ var app = (function () {
     		block,
     		id: create_content_slot.name,
     		type: "slot",
-    		source: "(102:24) ",
+    		source: "(96:24) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (82:16) <Card name="second">
+    // (76:16) <Card name="second">
     function create_default_slot_9(ctx) {
     	let funfact0;
     	let t0;
@@ -12123,7 +12468,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const funfact0_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				funfact0_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12133,7 +12478,7 @@ var app = (function () {
     			funfact1.$set(funfact1_changes);
     			const funfact2_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				funfact2_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12172,14 +12517,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(82:16) <Card name=\\\"second\\\">",
+    		source: "(76:16) <Card name=\\\"second\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:16) <Card name="hours">
+    // (116:16) <Card name="hours">
     function create_default_slot_8(ctx) {
     	let h1;
     	let t1;
@@ -12218,8 +12563,8 @@ var app = (function () {
     			t3 = text(" is definitely your favorite hour to chat with your friends!");
     			t4 = space();
     			create_component(chart.$$.fragment);
-    			add_location(h1, file$c, 117, 20, 7086);
-    			add_location(p, file$c, 118, 20, 7134);
+    			add_location(h1, file$c, 116, 20, 8017);
+    			add_location(p, file$c, 117, 20, 8065);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -12269,14 +12614,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(117:16) <Card name=\\\"hours\\\">",
+    		source: "(116:16) <Card name=\\\"hours\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (132:16) <Card name="third">
+    // (131:16) <Card name="third">
     function create_default_slot_7(ctx) {
     	let funfact0;
     	let t0;
@@ -12436,25 +12781,25 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(132:16) <Card name=\\\"third\\\">",
+    		source: "(131:16) <Card name=\\\"third\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (170:24) {#each $data.topDMs as channel, i}
+    // (169:24) {#each $data.topDMs as channel, i}
     function create_each_block_2(ctx) {
     	let leaderboarditem;
     	let current;
 
     	leaderboarditem = new LeaderboardItem({
     			props: {
-    				position: /*i*/ ctx[11],
-    				avatarURL: generateAvatarURL(/*channel*/ ctx[9].userData.avatar, /*channel*/ ctx[9].userData.id, /*channel*/ ctx[9].userData.discriminator),
-    				name: /*channel*/ ctx[9].userData.username,
-    				discriminator: /*channel*/ ctx[9].userData.discriminator,
-    				count: /*channel*/ ctx[9].messageCount.toLocaleString("en-US")
+    				position: /*i*/ ctx[10],
+    				avatarURL: generateAvatarURL(/*channel*/ ctx[8].userData.avatar, /*channel*/ ctx[8].userData.id, /*channel*/ ctx[8].userData.discriminator),
+    				name: /*channel*/ ctx[8].userData.username,
+    				discriminator: /*channel*/ ctx[8].userData.discriminator,
+    				count: /*channel*/ ctx[8].messageCount.toLocaleString("en-US")
     			},
     			$$inline: true
     		});
@@ -12469,10 +12814,10 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const leaderboarditem_changes = {};
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.avatarURL = generateAvatarURL(/*channel*/ ctx[9].userData.avatar, /*channel*/ ctx[9].userData.id, /*channel*/ ctx[9].userData.discriminator);
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.name = /*channel*/ ctx[9].userData.username;
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.discriminator = /*channel*/ ctx[9].userData.discriminator;
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.count = /*channel*/ ctx[9].messageCount.toLocaleString("en-US");
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.avatarURL = generateAvatarURL(/*channel*/ ctx[8].userData.avatar, /*channel*/ ctx[8].userData.id, /*channel*/ ctx[8].userData.discriminator);
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.name = /*channel*/ ctx[8].userData.username;
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.discriminator = /*channel*/ ctx[8].userData.discriminator;
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.count = /*channel*/ ctx[8].messageCount.toLocaleString("en-US");
     			leaderboarditem.$set(leaderboarditem_changes);
     		},
     		i: function intro(local) {
@@ -12493,14 +12838,14 @@ var app = (function () {
     		block,
     		id: create_each_block_2.name,
     		type: "each",
-    		source: "(170:24) {#each $data.topDMs as channel, i}",
+    		source: "(169:24) {#each $data.topDMs as channel, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (169:20) <Leaderboard title="Top Users" description="The users you chat the most with!">
+    // (168:20) <Leaderboard title="Top Users" description="The users you chat the most with!">
     function create_default_slot_6(ctx) {
     	let each_1_anchor;
     	let current;
@@ -12589,14 +12934,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(169:20) <Leaderboard title=\\\"Top Users\\\" description=\\\"The users you chat the most with!\\\">",
+    		source: "(168:20) <Leaderboard title=\\\"Top Users\\\" description=\\\"The users you chat the most with!\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (168:16) <Card name="top-users">
+    // (167:16) <Card name="top-users">
     function create_default_slot_5(ctx) {
     	let leaderboard;
     	let current;
@@ -12622,7 +12967,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const leaderboard_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				leaderboard_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12646,24 +12991,24 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(168:16) <Card name=\\\"top-users\\\">",
+    		source: "(167:16) <Card name=\\\"top-users\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (183:24) {#each $data.topChannels as channel, i}
+    // (182:24) {#each $data.topChannels as channel, i}
     function create_each_block_1(ctx) {
     	let leaderboarditem;
     	let current;
 
     	leaderboarditem = new LeaderboardItem({
     			props: {
-    				position: /*i*/ ctx[11],
-    				name: /*channel*/ ctx[9].name,
-    				guild: /*channel*/ ctx[9].guildName,
-    				count: /*channel*/ ctx[9].messageCount,
+    				position: /*i*/ ctx[10],
+    				name: /*channel*/ ctx[8].name,
+    				guild: /*channel*/ ctx[8].guildName,
+    				count: /*channel*/ ctx[8].messageCount,
     				channel: true
     			},
     			$$inline: true
@@ -12679,9 +13024,9 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			const leaderboarditem_changes = {};
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.name = /*channel*/ ctx[9].name;
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.guild = /*channel*/ ctx[9].guildName;
-    			if (dirty & /*$data*/ 1) leaderboarditem_changes.count = /*channel*/ ctx[9].messageCount;
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.name = /*channel*/ ctx[8].name;
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.guild = /*channel*/ ctx[8].guildName;
+    			if (dirty & /*$data*/ 1) leaderboarditem_changes.count = /*channel*/ ctx[8].messageCount;
     			leaderboarditem.$set(leaderboarditem_changes);
     		},
     		i: function intro(local) {
@@ -12702,14 +13047,14 @@ var app = (function () {
     		block,
     		id: create_each_block_1.name,
     		type: "each",
-    		source: "(183:24) {#each $data.topChannels as channel, i}",
+    		source: "(182:24) {#each $data.topChannels as channel, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (182:20) <Leaderboard title="Top Channels" description="The channels you chat the most in!">
+    // (181:20) <Leaderboard title="Top Channels" description="The channels you chat the most in!">
     function create_default_slot_4(ctx) {
     	let each_1_anchor;
     	let current;
@@ -12798,14 +13143,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(182:20) <Leaderboard title=\\\"Top Channels\\\" description=\\\"The channels you chat the most in!\\\">",
+    		source: "(181:20) <Leaderboard title=\\\"Top Channels\\\" description=\\\"The channels you chat the most in!\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (181:16) <Card name="top-channels">
+    // (180:16) <Card name="top-channels">
     function create_default_slot_3(ctx) {
     	let leaderboard;
     	let current;
@@ -12831,7 +13176,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const leaderboard_changes = {};
 
-    			if (dirty & /*$$scope, $data*/ 8193) {
+    			if (dirty & /*$$scope, $data*/ 4097) {
     				leaderboard_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12855,14 +13200,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(181:16) <Card name=\\\"top-channels\\\">",
+    		source: "(180:16) <Card name=\\\"top-channels\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (213:24) {:catch users}
+    // (212:24) {:catch users}
     function create_catch_block(ctx) {
     	let sveltetooltip;
     	let current;
@@ -12889,7 +13234,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const sveltetooltip_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 4096) {
     				sveltetooltip_changes.$$scope = { dirty, ctx };
     			}
 
@@ -12913,14 +13258,14 @@ var app = (function () {
     		block,
     		id: create_catch_block.name,
     		type: "catch",
-    		source: "(213:24) {:catch users}",
+    		source: "(212:24) {:catch users}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (214:28) <SvelteTooltip tip="Androz2091" bottom color="#000000">
+    // (213:28) <SvelteTooltip tip="Androz2091" bottom color="#000000">
     function create_default_slot_2(ctx) {
     	let a;
     	let div;
@@ -12931,9 +13276,9 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "contributors-item svelte-lrlcg0");
     			set_style(div, "background-image", "url('https://avatars.githubusercontent.com/u/42497995?s=460&u=86b6310688c5e05140c6d12902d878cacdcf93db&v=4')");
-    			add_location(div, file$c, 215, 36, 14015);
+    			add_location(div, file$c, 214, 36, 14946);
     			attr_dev(a, "href", "https://github.com/Androz2091");
-    			add_location(a, file$c, 214, 32, 13938);
+    			add_location(a, file$c, 213, 32, 14869);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -12948,18 +13293,18 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(214:28) <SvelteTooltip tip=\\\"Androz2091\\\" bottom color=\\\"#000000\\\">",
+    		source: "(213:28) <SvelteTooltip tip=\\\"Androz2091\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (205:24) {:then users}
+    // (204:24) {:then users}
     function create_then_block(ctx) {
     	let each_1_anchor;
     	let current;
-    	let each_value = /*users*/ ctx[5];
+    	let each_value = /*users*/ ctx[4];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -12989,7 +13334,7 @@ var app = (function () {
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*getGitHubContributors*/ 0) {
-    				each_value = /*users*/ ctx[5];
+    				each_value = /*users*/ ctx[4];
     				validate_each_argument(each_value);
     				let i;
 
@@ -13044,14 +13389,14 @@ var app = (function () {
     		block,
     		id: create_then_block.name,
     		type: "then",
-    		source: "(205:24) {:then users}",
+    		source: "(204:24) {:then users}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (207:32) <SvelteTooltip tip="{user.username}" bottom color="#000000">
+    // (206:32) <SvelteTooltip tip="{user.username}" bottom color="#000000">
     function create_default_slot_1(ctx) {
     	let a;
     	let div;
@@ -13064,11 +13409,11 @@ var app = (function () {
     			div = element("div");
     			t = space();
     			attr_dev(div, "class", "contributors-item svelte-lrlcg0");
-    			set_style(div, "background-image", "url('" + /*user*/ ctx[6].avatar + "')");
-    			add_location(div, file$c, 208, 40, 13571);
-    			attr_dev(a, "href", a_href_value = /*user*/ ctx[6].url);
+    			set_style(div, "background-image", "url('" + /*user*/ ctx[5].avatar + "')");
+    			add_location(div, file$c, 207, 40, 14502);
+    			attr_dev(a, "href", a_href_value = /*user*/ ctx[5].url);
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$c, 207, 36, 13493);
+    			add_location(a, file$c, 206, 36, 14424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -13086,21 +13431,21 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(207:32) <SvelteTooltip tip=\\\"{user.username}\\\" bottom color=\\\"#000000\\\">",
+    		source: "(206:32) <SvelteTooltip tip=\\\"{user.username}\\\" bottom color=\\\"#000000\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (206:28) {#each users as user}
+    // (205:28) {#each users as user}
     function create_each_block$1(ctx) {
     	let sveltetooltip;
     	let current;
 
     	sveltetooltip = new SvelteTooltip({
     			props: {
-    				tip: /*user*/ ctx[6].username,
+    				tip: /*user*/ ctx[5].username,
     				bottom: true,
     				color: "#000000",
     				$$slots: { default: [create_default_slot_1] },
@@ -13120,7 +13465,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const sveltetooltip_changes = {};
 
-    			if (dirty & /*$$scope*/ 8192) {
+    			if (dirty & /*$$scope*/ 4096) {
     				sveltetooltip_changes.$$scope = { dirty, ctx };
     			}
 
@@ -13144,14 +13489,14 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(206:28) {#each users as user}",
+    		source: "(205:28) {#each users as user}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (203:56)                              <p>Loading...</p>                         {:then users}
+    // (202:56)                              <p>Loading...</p>                         {:then users}
     function create_pending_block(ctx) {
     	let p;
 
@@ -13159,7 +13504,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Loading...";
-    			add_location(p, file$c, 203, 28, 13258);
+    			add_location(p, file$c, 202, 28, 14189);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -13176,14 +13521,14 @@ var app = (function () {
     		block,
     		id: create_pending_block.name,
     		type: "pending",
-    		source: "(203:56)                              <p>Loading...</p>                         {:then users}",
+    		source: "(202:56)                              <p>Loading...</p>                         {:then users}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (195:16) <Card name="about">
+    // (194:16) <Card name="about">
     function create_default_slot(ctx) {
     	let div0;
     	let h2;
@@ -13206,8 +13551,8 @@ var app = (function () {
     		pending: create_pending_block,
     		then: create_then_block,
     		catch: create_catch_block,
-    		value: 5,
-    		error: 5,
+    		value: 4,
+    		error: 4,
     		blocks: [,,,]
     	};
 
@@ -13229,18 +13574,18 @@ var app = (function () {
     			t6 = space();
     			div1 = element("div");
     			info.block.c();
-    			add_location(h2, file$c, 196, 24, 12689);
+    			add_location(h2, file$c, 195, 24, 13620);
     			attr_dev(a, "href", "https://github.com/Androz2091/discord-data-package-explorer");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "text-discord");
     			set_style(a, "text-decoration", "none");
-    			add_location(a, file$c, 197, 80, 12797);
-    			add_location(p0, file$c, 197, 24, 12741);
-    			add_location(p1, file$c, 198, 24, 13001);
+    			add_location(a, file$c, 196, 80, 13728);
+    			add_location(p0, file$c, 196, 24, 13672);
+    			add_location(p1, file$c, 197, 24, 13932);
     			set_style(div0, "text-align", "center");
-    			add_location(div0, file$c, 195, 20, 12631);
+    			add_location(div0, file$c, 194, 20, 13562);
     			attr_dev(div1, "class", "contributors svelte-lrlcg0");
-    			add_location(div1, file$c, 201, 20, 13146);
+    			add_location(div1, file$c, 200, 20, 14077);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -13289,7 +13634,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(195:16) <Card name=\\\"about\\\">",
+    		source: "(194:16) <Card name=\\\"about\\\">",
     		ctx
     	});
 
@@ -13307,7 +13652,7 @@ var app = (function () {
     			div = element("div");
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "statistics svelte-lrlcg0");
-    			add_location(div, file$c, 51, 4, 1940);
+    			add_location(div, file$c, 45, 4, 1636);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -13382,7 +13727,6 @@ var app = (function () {
     	component_subscribe($$self, data, $$value => $$invalidate(0, $data = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Stats", slots, []);
-    	let timeout;
 
     	onMount(() => {
     		if (window.location.href.includes("/demo")) {
@@ -13395,13 +13739,6 @@ var app = (function () {
     					"--toastProgressBackground": "#2F855A"
     				}
     			});
-
-    			timeout = setTimeout(
-    				() => {
-    					showModal("<div style=\"text-align: center\">Like what you see?<br><a href=\"https://androz2091.fr/discord\" target=\"_blank\">Support us by saying hello and sharing your stats in our Discord server!<a></div>");
-    				},
-    				10000
-    			);
     		} else navigate("/");
     	});
 
@@ -13441,20 +13778,11 @@ var app = (function () {
     		FunFact,
     		Leaderboard,
     		LeaderboardItem,
-    		timeout,
     		open,
     		showModal,
     		hoursLabels,
     		$data
     	});
-
-    	$$self.$inject_state = $$props => {
-    		if ("timeout" in $$props) timeout = $$props.timeout;
-    	};
-
-    	if ($$props && "$$inject" in $$props) {
-    		$$self.$inject_state($$props.$$inject);
-    	}
 
     	return [$data, showModal, hoursLabels];
     }
@@ -14960,7 +15288,7 @@ var app = (function () {
     const { console: console_1 } = globals;
     const file$d = "src\\views\\Loader.svelte";
 
-    // (121:24) {:else}
+    // (124:24) {:else}
     function create_else_block$3(ctx) {
     	let t0;
     	let strong;
@@ -14972,7 +15300,7 @@ var app = (function () {
     			strong = element("strong");
     			strong.textContent = "here";
     			t2 = text(" to select your Discord data");
-    			add_location(strong, file$d, 121, 34, 7616);
+    			add_location(strong, file$d, 124, 34, 7772);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -14991,14 +15319,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(121:24) {:else}",
+    		source: "(124:24) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:40) 
+    // (122:40) 
     function create_if_block_2(ctx) {
     	let p;
 
@@ -15006,7 +15334,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			set_style(p, "color", "red");
-    			add_location(p, file$d, 119, 28, 7509);
+    			add_location(p, file$d, 122, 28, 7665);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -15023,14 +15351,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(119:40) ",
+    		source: "(122:40) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:24) {#if loading}
+    // (117:24) {#if loading}
     function create_if_block$6(ctx) {
     	let t0_value = (/*$loadTask*/ ctx[2] || "Loading your package file...") + "";
     	let t0;
@@ -15079,14 +15407,14 @@ var app = (function () {
     		block,
     		id: create_if_block$6.name,
     		type: "if",
-    		source: "(114:24) {#if loading}",
+    		source: "(117:24) {#if loading}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:28) {#if $loadEstimatedTime}
+    // (119:28) {#if $loadEstimatedTime}
     function create_if_block_1$2(ctx) {
     	let small;
     	let t;
@@ -15097,7 +15425,7 @@ var app = (function () {
     			t = text(/*$loadEstimatedTime*/ ctx[3]);
     			set_style(small, "display", "block");
     			set_style(small, "margin-top", "4px");
-    			add_location(small, file$d, 116, 32, 7329);
+    			add_location(small, file$d, 119, 32, 7485);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, small, anchor);
@@ -15115,7 +15443,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(116:28) {#if $loadEstimatedTime}",
+    		source: "(119:28) {#if $loadEstimatedTime}",
     		ctx
     	});
 
@@ -15125,35 +15453,41 @@ var app = (function () {
     function create_fragment$f(ctx) {
     	let div4;
     	let div3;
+    	let center;
     	let p0;
     	let a0;
     	let link_action;
     	let t1;
+    	let br0;
     	let t2;
+    	let t3;
+    	let h3;
+    	let br1;
+    	let t5;
     	let p1;
     	let a1;
     	let small0;
-    	let t4;
-    	let br;
-    	let t5;
+    	let t7;
+    	let br2;
+    	let t8;
     	let span0;
     	let link_action_1;
-    	let t7;
+    	let t10;
     	let div0;
     	let small1;
-    	let t9;
+    	let t12;
     	let label;
     	let svg;
     	let path;
-    	let t10;
+    	let t13;
     	let span1;
-    	let t11;
+    	let t14;
     	let div1;
     	let a2;
     	let button;
-    	let t13;
+    	let t16;
     	let div2;
-    	let t14;
+    	let t17;
     	let a3;
     	let link_action_2;
     	let mounted;
@@ -15172,84 +15506,95 @@ var app = (function () {
     		c: function create() {
     			div4 = element("div");
     			div3 = element("div");
+    			center = element("center");
     			p0 = element("p");
     			a0 = element("a");
     			a0.textContent = "DDPE";
-    			t1 = text(" is a site that generates stats from your Discord Data Package. It is your device that processes the data, nothing is sent to any server!");
-    			t2 = space();
+    			t1 = text(" is a site that generates stats from your Discord Data Package.");
+    			br0 = element("br");
+    			t2 = text("Leaderboards updated to show top 50 and favourite words increased to 10.");
+    			t3 = space();
+    			h3 = element("h3");
+    			h3.textContent = "It is your device that processes the data, nothing is sent to any server!";
+    			br1 = element("br");
+    			t5 = space();
     			p1 = element("p");
     			a1 = element("a");
     			small0 = element("small");
     			small0.textContent = "1";
-    			t4 = text("\n                    Get my Discord JSON data 👆\n                    ");
-    			br = element("br");
-    			t5 = space();
+    			t7 = text("\n                    Get my Discord JSON data 👆\n                    ");
+    			br2 = element("br");
+    			t8 = space();
     			span0 = element("span");
-    			span0.textContent = "(click on this button)";
-    			t7 = space();
+    			span0.textContent = "(Clicking on this does not to anything)";
+    			t10 = space();
     			div0 = element("div");
     			small1 = element("small");
     			small1.textContent = "2";
-    			t9 = space();
+    			t12 = space();
     			label = element("label");
     			svg = svg_element("svg");
     			path = svg_element("path");
-    			t10 = space();
+    			t13 = space();
     			span1 = element("span");
     			if_block.c();
-    			t11 = space();
+    			t14 = space();
     			div1 = element("div");
     			a2 = element("a");
     			button = element("button");
-    			button.textContent = "Need help? Chat with us on Discord!";
-    			t13 = space();
+    			button.textContent = "Something wrong? Poke Brandy! uwu";
+    			t16 = space();
     			div2 = element("div");
-    			t14 = text("no package yet? ");
+    			t17 = text("no package yet? ");
     			a3 = element("a");
     			a3.textContent = "demo";
     			attr_dev(a0, "href", "/");
-    			add_location(a0, file$d, 99, 46, 3868);
+    			add_location(a0, file$d, 100, 46, 3889);
+    			add_location(br0, file$d, 100, 138, 3981);
     			attr_dev(p0, "class", "app-loader-description svelte-1l0qc0f");
-    			add_location(p0, file$d, 99, 12, 3834);
+    			add_location(p0, file$d, 100, 12, 3855);
+    			add_location(h3, file$d, 101, 12, 4074);
+    			add_location(br1, file$d, 101, 94, 4156);
+    			add_location(center, file$d, 99, 12, 3834);
     			attr_dev(small0, "class", "app-loader-tag tag svelte-1l0qc0f");
-    			add_location(small0, file$d, 102, 20, 4141);
-    			add_location(br, file$d, 104, 20, 4253);
-    			add_location(span0, file$d, 105, 20, 4278);
+    			add_location(small0, file$d, 105, 20, 4280);
+    			add_location(br2, file$d, 107, 20, 4392);
+    			add_location(span0, file$d, 108, 20, 4417);
     			attr_dev(a1, "class", "app-loader-tuto svelte-1l0qc0f");
-    			attr_dev(a1, "href", "/help");
-    			add_location(a1, file$d, 101, 16, 4071);
-    			add_location(p1, file$d, 100, 12, 4051);
+    			attr_dev(a1, "href", "");
+    			add_location(a1, file$d, 104, 16, 4215);
+    			add_location(p1, file$d, 103, 12, 4195);
     			attr_dev(small1, "class", "app-loader-tag tag svelte-1l0qc0f");
-    			add_location(small1, file$d, 109, 16, 4534);
+    			add_location(small1, file$d, 112, 16, 4690);
     			attr_dev(path, "data-v-9d8e2fa4", "");
     			attr_dev(path, "d", "M29.5 0.652008C25.0436 0.652008 20.5671 2.36576 17.1679 5.81576C14.4136 8.61109 12.8123 12.1254 12.2894 15.7607C5.37305 16.6594 0.0200195 22.6337 0.0200195 29.892C0.0200195 37.7705 6.32733 44.172 14.09 44.172H21.46C21.5488 44.1733 21.6369 44.1566 21.7193 44.123C21.8017 44.0894 21.8767 44.0395 21.9399 43.9763C22.0032 43.913 22.0534 43.8376 22.0876 43.7545C22.1219 43.6713 22.1396 43.5821 22.1396 43.492C22.1396 43.4019 22.1219 43.3127 22.0876 43.2295C22.0534 43.1464 22.0032 43.071 21.9399 43.0077C21.8767 42.9445 21.8017 42.8946 21.7193 42.861C21.6369 42.8274 21.5488 42.8107 21.46 42.812H14.09C7.0516 42.812 1.36002 37.0355 1.36002 29.892C1.36002 23.1472 6.43112 17.6122 12.9175 17.0145C13.0706 17.001 13.2145 16.9345 13.325 16.8262C13.4355 16.7179 13.506 16.5743 13.5247 16.4195C13.928 12.8934 15.4639 9.47896 18.1309 6.77201C21.273 3.58315 25.383 2.01201 29.5 2.01201C33.617 2.01201 37.7052 3.58215 40.8481 6.77201C44.4813 10.4594 46.0212 15.486 45.4544 20.287C45.4425 20.3832 45.4509 20.4808 45.4792 20.5734C45.5075 20.666 45.555 20.7513 45.6184 20.8238C45.6818 20.8962 45.7598 20.954 45.8471 20.9934C45.9343 21.0328 46.0289 21.0528 46.1244 21.052H46.92C52.8705 21.052 57.64 25.8927 57.64 31.932C57.64 37.9713 52.8705 42.812 46.92 42.812H37.54C37.4512 42.8107 37.3631 42.8274 37.2807 42.861C37.1983 42.8946 37.1233 42.9445 37.0601 43.0077C36.9969 43.071 36.9467 43.1464 36.9124 43.2295C36.8781 43.3127 36.8605 43.4019 36.8605 43.492C36.8605 43.5821 36.8781 43.6713 36.9124 43.7545C36.9467 43.8376 36.9969 43.913 37.0601 43.9763C37.1233 44.0395 37.1983 44.0894 37.2807 44.123C37.3631 44.1566 37.4512 44.1733 37.54 44.172H46.92C53.5897 44.172 58.98 38.7012 58.98 31.932C58.98 25.1628 53.5897 19.692 46.92 19.692H46.7944C47.1723 14.7203 45.554 9.61428 41.8113 5.81576C38.4131 2.36678 33.9565 0.652008 29.5 0.652008ZM29.437 23.772C29.2789 23.7856 29.1417 23.8585 29.0393 23.942L21.6693 30.742C21.4092 30.9862 21.385 31.457 21.6277 31.7195C21.8699 31.982 22.3337 31.9878 22.5908 31.7406L28.83 25.9819V47.5718C28.83 47.9474 29.13 48.2518 29.5 48.2518C29.8701 48.2518 30.17 47.9474 30.17 47.5718V25.9819L36.4094 31.7406C36.6665 31.9879 37.1303 31.9821 37.3725 31.7195C37.6147 31.457 37.6062 31.0233 37.331 30.742L29.961 23.942C29.7746 23.8029 29.5957 23.7581 29.4375 23.772H29.437Z");
     			attr_dev(path, "fill-opacity", "0.39");
-    			add_location(path, file$d, 111, 115, 4730);
+    			add_location(path, file$d, 114, 115, 4886);
     			attr_dev(svg, "width", "59");
     			attr_dev(svg, "height", "49");
     			attr_dev(svg, "viewBox", "0 0 59 49");
     			attr_dev(svg, "fill", "none");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
-    			add_location(svg, file$d, 111, 20, 4635);
+    			add_location(svg, file$d, 114, 20, 4791);
     			attr_dev(span1, "class", "app-loader-upload-info svelte-1l0qc0f");
-    			add_location(span1, file$d, 112, 20, 7094);
+    			add_location(span1, file$d, 115, 20, 7250);
     			attr_dev(label, "for", "upload");
     			attr_dev(label, "class", "svelte-1l0qc0f");
-    			add_location(label, file$d, 110, 16, 4594);
+    			add_location(label, file$d, 113, 16, 4750);
     			attr_dev(div0, "class", "app-loader-upload svelte-1l0qc0f");
     			set_style(div0, "cursor", /*loading*/ ctx[0] ? "" : "pointer");
-    			add_location(div0, file$d, 108, 12, 4364);
+    			add_location(div0, file$d, 111, 12, 4520);
     			attr_dev(button, "class", "app-discord-btn svelte-1l0qc0f");
-    			add_location(button, file$d, 127, 72, 7878);
-    			attr_dev(a2, "href", "https://androz2091.fr/discord");
+    			add_location(button, file$d, 130, 43, 8005);
+    			attr_dev(a2, "href", "");
     			attr_dev(a2, "target", "_blank");
-    			add_location(a2, file$d, 127, 16, 7822);
+    			add_location(a2, file$d, 130, 16, 7978);
     			attr_dev(div1, "class", "app-discord svelte-1l0qc0f");
-    			add_location(div1, file$d, 126, 12, 7780);
+    			add_location(div1, file$d, 129, 12, 7936);
     			attr_dev(a3, "href", "/stats/demo");
-    			add_location(a3, file$d, 130, 32, 8045);
+    			add_location(a3, file$d, 133, 32, 8170);
     			attr_dev(div2, "class", "app-demo svelte-1l0qc0f");
-    			add_location(div2, file$d, 129, 12, 7990);
+    			add_location(div2, file$d, 132, 12, 8115);
     			attr_dev(div3, "class", "app-loader-boxes svelte-1l0qc0f");
     			add_location(div3, file$d, 98, 8, 3791);
     			attr_dev(div4, "class", "app-loader svelte-1l0qc0f");
@@ -15261,34 +15606,40 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, div4, anchor);
     			append_dev(div4, div3);
-    			append_dev(div3, p0);
+    			append_dev(div3, center);
+    			append_dev(center, p0);
     			append_dev(p0, a0);
     			append_dev(p0, t1);
-    			append_dev(div3, t2);
+    			append_dev(p0, br0);
+    			append_dev(p0, t2);
+    			append_dev(center, t3);
+    			append_dev(center, h3);
+    			append_dev(center, br1);
+    			append_dev(div3, t5);
     			append_dev(div3, p1);
     			append_dev(p1, a1);
     			append_dev(a1, small0);
-    			append_dev(a1, t4);
-    			append_dev(a1, br);
-    			append_dev(a1, t5);
+    			append_dev(a1, t7);
+    			append_dev(a1, br2);
+    			append_dev(a1, t8);
     			append_dev(a1, span0);
-    			append_dev(div3, t7);
+    			append_dev(div3, t10);
     			append_dev(div3, div0);
     			append_dev(div0, small1);
-    			append_dev(div0, t9);
+    			append_dev(div0, t12);
     			append_dev(div0, label);
     			append_dev(label, svg);
     			append_dev(svg, path);
-    			append_dev(label, t10);
+    			append_dev(label, t13);
     			append_dev(label, span1);
     			if_block.m(span1, null);
-    			append_dev(div3, t11);
+    			append_dev(div3, t14);
     			append_dev(div3, div1);
     			append_dev(div1, a2);
     			append_dev(a2, button);
-    			append_dev(div3, t13);
+    			append_dev(div3, t16);
     			append_dev(div3, div2);
-    			append_dev(div2, t14);
+    			append_dev(div2, t17);
     			append_dev(div2, a3);
 
     			if (!mounted) {

@@ -21,6 +21,8 @@
   "dependencies": {
     "@zerodevx/svelte-toast": "^0.1.4",
     "axios": "^0.21.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "fflate": "^0.6.7",
     "papaparse": "^5.3.0",
     "sass": "^1.35.1",
@@ -30,8 +32,5 @@
     "svelte-routing": "^1.6.0",
     "svelte-simple-modal": "^0.8.1",
     "svelte-tooltip": "^1.2.0"
-  },
-  "engines": {
-    "node": "^14.17.1"
   }
 }
